@@ -14,12 +14,12 @@ const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
         query {
             site {
-            siteMetadata {
-                title
-            }
+                siteMetadata {
+                    title
+                }
             }
         }
-        `)
+    `)
 
     return (
         <main className={container}>
